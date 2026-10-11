@@ -139,7 +139,7 @@ My personal portfolio: a responsive single-page site built with **React 19** and
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=roberamos1525&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0b1530&title_color=22d3ee&icon_color=a78bfa&text_color=cfe7ff&ring_color=3b82f6" alt="GitHub stats"/>
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=roberamos1525&layout=compact&hide_border=true&bg_color=0b1530&title_color=22d3ee&text_color=cfe7ff" alt="Most used languages"/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=roberamos1525&bg_color=0b1530&color=cfe7ff&line=22d3ee&point=a78bfa&area=true&area_color=3b82f6&hide_border=true" alt="Contribution activity"/>
+<img height="165" src="https://streak-stats.demolab.com/?user=roberamos1525&hide_border=true&background=0b1530&ring=22d3ee&fire=a78bfa&currStreakLabel=22d3ee&sideLabels=cfe7ff&currStreakNum=e6edf7&sideNums=e6edf7&dates=8ba3c7&stroke=1e2a55" alt="Contribution streak"/>
 
 </div>
 
