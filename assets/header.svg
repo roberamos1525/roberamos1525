@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Robert Ramos — Software Engineer, Full-Stack and Applied AI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b18"/>
+      <stop offset=".55" stop-color="#0b1530"/>
+      <stop offset="1" stop-color="#10123a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".5" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="orbCyan" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbPurple" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#3b82f6" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title{font:700 54px 'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif;fill:#e6edf7;letter-spacing:-.5px}
+      .sub{font:600 21px 'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif;fill:url(#accent)}
+      .meta{font:400 15px 'Cascadia Code',Consolas,'SFMono-Regular',Menlo,monospace;fill:#8ba3c7}
+      .node{fill:#0b1530;stroke:#22d3ee;stroke-width:1.5}
+      .core{fill:#111a44;stroke:#a78bfa;stroke-width:2}
+      .label{font:600 11px 'Cascadia Code',Consolas,Menlo,monospace;fill:#cfe7ff;text-anchor:middle}
+      .link{fill:none;stroke:url(#accent);stroke-width:1.6;stroke-opacity:.55}
+      .fade{opacity:0;animation:fade 1.1s ease-out forwards}
+      .d1{animation-delay:.15s}.d2{animation-delay:.45s}.d3{animation-delay:.75s}
+      .pulse{fill:none;stroke:#22d3ee;stroke-opacity:.5;transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-out infinite}
+      .pulse.p2{stroke:#a78bfa;animation-delay:1.4s}
+      .cursor{fill:#22d3ee;animation:blink 1.1s steps(1) infinite}
+      @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+      @keyframes pulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+      @keyframes blink{50%{opacity:0}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+  <circle cx="1010" cy="70" r="220" fill="url(#orbPurple)"/>
+  <circle cx="820" cy="300" r="200" fill="url(#orbCyan)"/>
+  <rect x="0" y="316" width="1200" height="4" fill="url(#accent)"/>
+
+  <g class="fade d1">
+    <text x="64" y="128" class="title">Robert Ramos</text>
+  </g>
+  <g class="fade d2">
+    <text x="66" y="170" class="sub">Software Engineer · Full-Stack &amp; Applied AI</text>
+  </g>
+  <g class="fade d3">
+    <text x="66" y="224" class="meta">&gt; build · evaluate · ship · operate</text>
+    <rect x="392" y="211" width="9" height="17" class="cursor"/>
+    <text x="66" y="256" class="meta">Pampanga, Philippines · AI training &amp; evaluation</text>
+  </g>
+
+  <!-- delivery pipeline: UI → API → LLM ⇄ RAG → EVAL → PROD -->
+  <g transform="translate(700 0)">
+    <path id="route" class="link" d="M60 100 C130 100 140 165 230 165 S330 95 400 95"/>
+    <path class="link" d="M60 230 C140 230 150 165 230 165"/>
+    <path class="link" d="M230 165 L230 245"/>
+    <path class="link" d="M400 95 C450 95 440 230 400 240"/>
+
+    <circle r="5" fill="#22d3ee" filter="url(#glow)">
+      <animateMotion dur="3.6s" repeatCount="indefinite" path="M60 100 C130 100 140 165 230 165 S330 95 400 95"/>
+    </circle>
+    <circle r="4" fill="#a78bfa" filter="url(#glow)">
+      <animateMotion dur="4.2s" begin="1s" repeatCount="indefinite" path="M60 230 C140 230 150 165 230 165"/>
+    </circle>
+
+    <g transform="translate(60 100)"><circle r="26" class="node"/><text y="4" class="label">UI</text></g>
+    <g transform="translate(60 230)"><circle r="26" class="node"/><text y="4" class="label">API</text></g>
+    <g transform="translate(230 165)"><circle r="40" class="pulse"/><circle r="40" class="pulse p2"/><circle r="36" class="core"/><text y="4" class="label">LLM</text></g>
+    <g transform="translate(230 245)"><circle r="18" class="node"/><text y="4" class="label">RAG</text></g>
+    <g transform="translate(400 95)"><circle r="26" class="node"/><text y="4" class="label">EVAL</text></g>
+    <g transform="translate(400 240)"><circle r="26" class="node"/><text y="4" class="label">PROD</text></g>
+  </g>
+</svg>
